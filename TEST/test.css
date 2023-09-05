@@ -1,0 +1,36 @@
+/*
+• Never use id:s in CSS
+• Works from the top-down (!cascading! style sheet). Will use the last message it read
+• More specificty = overrules other elements. Priority going from top
+  1. Inline styles
+  2. ID selectors
+  3. Class selectors, attribute selectors, and pseudo-classes
+  4. Tag selectors e.g. div, p, a
+  5. Universal selectors (*)
+• 
+*/
+/* Selects everything */
+* {
+  border: 3px solid black;
+}
+
+body {
+  font-size: 22px;
+  font-family:'Courier New', Courier, monospace
+}
+/* Will only check for <p> nested in <article> */
+article p {
+  color: purple;
+}
+/* Buttons do not inherit fonts by default. You have to specify */
+button {
+  font: inherit;
+}
+
+.article2Class {
+  color: blue
+}
+
+#article3ID {
+  font-style: italic;
+}
