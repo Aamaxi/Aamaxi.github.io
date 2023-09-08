@@ -8,17 +8,47 @@
   4. Tag selectors e.g. div, p, a
   5. Universal selectors (*)
   Website that can calculate specificity: https: //specificity.keegan.st/
+
+• Text should not have absolute size (px). Elements like borders are okay to use absolute size with
+• REM = root element. Uses the size of the root element (NOT PARENT) as a reference. 0.5 rem = half of the size of the ROOT element defined by the browser (or you if you set an absolute size to the element. But don't do that)
+• root = highest level parent of a given specification. 
+• EM = Looking at the parent element instead of root element. Don't use for fonts because it complicates things. Use EM for padding or margin in for example button.
+• ch = specifies how many characters can be on each line. Bases the width of each character on the number "0" in the specified font.
+• vw = viewport width. Bases on how wide the viewport is. Don't use because it will show scrollbar on the bottom when your content outgrows screen and a scrollbar on the right shows up. Use percentage to avoid this or don't define at all.
+
+• box-sizing: border-box; = includes size of border and padding that was there before when deciding what size an element will have instead of just basing size of content like content-box.
+• min-height: 100vh; = makes it so the body goes down to the bottom of page instead of cutting of at the last element that is nearest the bottom. 
+• margin: 1.5em 2em 2 em; =
+margin-top: 1.5em;
+margin-right: 2 em;
+margin-botom: 2 em;
+margin-left: 2 em;
+• outline(-offset) = gives a visual border to element without affecting the position of any element on the page. Is used for accessibility and showing focus of an element for example button or link. Offset is used to show how far away from or near the border the outline should be.
+• margin: auto = centers the element horizontally within its parent
+
+• border: 1px solid red = helps a lot for debugging and seeing actually how big elements are
+
+• text-decoration: manipulates the decorations of text. Can remove all decorations on links that have default decorations (text-decoration: none;)
+• text-transform: change for example all letters to be lowercase or uppercase
+• text-align: justify: makes the point of end for every line unifrom with all lines of text. left: moves point of beginnings to the left edge
+• text-indent: indent for line to what you want for example "EM"
+• type "text" in vs code to see all alternatives for text manipulation
+• a:visited {}: is a sudo class that represents the current state of the element being used (a) 
 • 
 */
-/* Selects everything */
+/* Selects everything. Resets default sizes so everything is at zero. Makes things simpler */
 * {
-  border: 3px solid black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* includes size of border and padding that was there before when deciding what size an element will have instead of just basing size of content like content-box.*/
+  /* border: 1px solid red  = helps a lot for debugging and seeing actually how big elements are*/
 }
 
 body {
   font-size: 22px;
   font-family:'Courier New', Courier, monospace;
-  background-color: #f8edec34
+  background-color: #f8edec34;
+  min-height: 100vh; /*makes it so the body goes down to the bottom of page instead of cutting of at the last element that is nearest the bottom. */
 }
 /* Will only check for <p> nested in <article> */
 article p {
@@ -35,4 +65,9 @@ button {
 
 #article3ID {
   font-style: italic;
+}
+
+li, ol {
+  list-style-position: inside;
+  margin-left: 5px;
 }
