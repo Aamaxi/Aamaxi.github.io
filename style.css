@@ -1,0 +1,34 @@
+/*resets everything on page to be 0*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*makes it so the body goes down to the bottom of page instead of cutting of at the last element that is nearest the bottom. */
+body {
+  min-height: 100vh;
+}
+/*removes bullet points from all list items*/
+li {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.aron_corestav-navbar {
+  width: 50vw; 
+  display: flex;
+  justify-content: center;
+}
+
+.buttons-navbar {
+  width: 50vw; 
+  display: flex;
+  justify-content: space-evenly;
+}
