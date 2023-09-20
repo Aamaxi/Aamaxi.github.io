@@ -38,7 +38,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  height: 100vh; /*change so you can see next part of page instead of one page taking upp 100% of viewport*/
   background-color: #c0c0c0;
 }
 /*change sizing for better system maybe*/
@@ -56,12 +56,12 @@ li {
   align-self: flex-start;
   margin: 1rem;
 }
-
-.myWorkSection {
+/*make a css class that has attributes that match titleSection and myWorkSection*/
+.myWorkSection { 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  height: 100vh; /*change so you can see next part of page instead of one page taking upp 100% of viewport*/
   background-color: #744343;
 }
 
