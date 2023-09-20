@@ -19,6 +19,7 @@ li {
   flex-direction: row;
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-top: 1rem;
 }
 
 .aron_corestav-navbar {
@@ -31,4 +32,39 @@ li {
   width: 50vw; 
   display: flex;
   justify-content: space-evenly;
+}
+
+.titleSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-color: #c0c0c0;
+}
+/*change sizing for better system maybe*/
+.h1-titlesection {
+  margin: 1rem;
+  font-size: 3.5em;
+}
+
+.p-titlesection {
+  margin: 1rem;
+  font-size: 1.5em;
+}
+
+.button-titlesection {
+  align-self: flex-start;
+  margin: 1rem;
+}
+
+.myWorkSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-color: #744343;
+}
+
+.h2-myWorkSection {
+
 }
