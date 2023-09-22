@@ -80,7 +80,7 @@ li {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  flex-basis: /*look at how to make elements wrap to be by default in 2 rows with 3 elements per row*/
+  flex-basis: /*look at how to make elements wrap to be by default in 2 rows with 3 elements per row (talks about it in latest ChatGPT convo)*/
 }
 
 .button-myWorkSection {
