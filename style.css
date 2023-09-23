@@ -58,7 +58,7 @@ li {
 .titleSection {
   background-color: #c0c0c0;
 }
-/*change sizing for better system maybe*/
+/* change sizing for better system maybe */
 
 .p-titlesection {
   margin: 1rem;
@@ -68,6 +68,8 @@ li {
 .button-titleSection {
   align-self: flex-start;
 }
+
+/* find out how to use flexbox better */
 
 .myWorkSection { 
   background-color: #744343;
@@ -80,11 +82,17 @@ li {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  flex-basis: /*look at how to make elements wrap to be by default in 2 rows with 3 elements per row (talks about it in latest ChatGPT convo)*/
+}
+
+.li-myWorkSection {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 33.33%;
 }
 
 .button-myWorkSection {
   margin: 1rem;
   width: 10em;
   height: 7em;
+  flex-grow: 1;
 }
