@@ -88,11 +88,11 @@ li {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 33.33%;
+  /* find out how all these elements work exactly and how to use them */
 }
 
 .button-myWorkSection {
   margin: 1rem;
   width: 10em;
   height: 7em;
-  flex-grow: 1;
 }
