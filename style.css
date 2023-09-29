@@ -14,6 +14,27 @@ li {
   list-style: none;
 }
 
+.section-standard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.button-standard {
+  margin: 1rem;
+}
+
+.h1-standard {
+  margin: 1rem;
+  font-size: 3.5em;
+}
+
+.h2-standard {
+  margin: 1rem;
+  font-size: 3em;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -35,36 +56,43 @@ li {
 }
 
 .titleSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh; /*change so you can see next part of page instead of one page taking upp 100% of viewport*/
   background-color: #c0c0c0;
 }
-/*change sizing for better system maybe*/
-.h1-titlesection {
-  margin: 1rem;
-  font-size: 3.5em;
-}
+/* change sizing for better system maybe */
 
 .p-titlesection {
   margin: 1rem;
   font-size: 1.5em;
 }
 
-.button-titlesection {
+.button-titleSection {
   align-self: flex-start;
-  margin: 1rem;
 }
-/*make a css class that has attributes that match titleSection and myWorkSection*/
+
+/* find out how to use flexbox better */
+
 .myWorkSection { 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh; /*change so you can see next part of page instead of one page taking upp 100% of viewport*/
   background-color: #744343;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.h2-myWorkSection {
+.ul-myWorkSection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
+.li-myWorkSection {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 33.33%;
+  /* find out how all these elements work exactly and how to use them */
+}
+
+.button-myWorkSection {
+  margin: 1rem;
+  width: 10em;
+  height: 7em;
 }
