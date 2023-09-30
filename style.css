@@ -18,7 +18,6 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   min-height: 100vh;
 }
 
@@ -81,6 +80,7 @@ li {
 
 .myWorkSection { 
   background-color: #744343;
+  align-items: center;
 }
 
 .h2-myWorkSection {
