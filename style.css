@@ -18,7 +18,8 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .button-standard {
@@ -33,6 +34,13 @@ li {
 .h2-standard {
   margin: 1rem;
   font-size: 3em;
+}
+
+.ul_grid-standard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
 }
 
 .navbar {
@@ -73,26 +81,21 @@ li {
 
 .myWorkSection { 
   background-color: #744343;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.ul-myWorkSection {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.li-myWorkSection {
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 33.33%;
-  /* find out how all these elements work exactly and how to use them */
+.h2-myWorkSection {
+  text-align: center;
 }
 
 .button-myWorkSection {
-  margin: 1rem;
   width: 10em;
-  height: 7em;
+  min-height: 7em;
+}
+
+.brandSection {
+  background-color: aqua;
+}
+
+.h2-brandSection {
+  text-align: center;
 }
