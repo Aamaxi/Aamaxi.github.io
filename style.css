@@ -9,6 +9,10 @@
 body {
   min-height: 100vh;
 }
+
+main {
+
+}
 /*removes bullet points from all list items*/
 li {
   list-style: none;
@@ -19,6 +23,8 @@ li {
   flex-direction: column;
   justify-content: center;
   min-height: 85vh;
+  padding-left: 12vw;
+  padding-right: 12vw;
 }
 
 .img-standard {
@@ -35,7 +41,6 @@ li {
 }
 
 .h2-standard {
-  margin: 1rem;
   font-size: 3em;
 }
 
@@ -146,12 +151,24 @@ li {
 .contactSection {
   display: flex;
   background-color: darkgrey;
+  padding-left: calc(12vw + 2vw);
+  padding-right: calc(12vw + 2vw);
+  gap: 1.5rem;
 }
 
 .form-contactSection {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+.input-contactSection {
+  padding: 5px;
+}
+
+.button-contactSection {
+  align-self: flex-start;
 }
 
 footer {
@@ -162,9 +179,15 @@ footer {
 .ul-footer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .li-footer {
   display: flex;
   flex-direction: column;
+}
+
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
 }
