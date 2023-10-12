@@ -8,6 +8,7 @@
 /*makes it so the body goes down to the bottom of page instead of cutting of at the last element that is nearest the bottom. */
 body {
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -176,15 +177,27 @@ footer {
   color: azure;
 }
 
+.top-footer {
+  display: flex;
+  gap: 1em;
+  position: relative;
+  justify-content: center;
+}
+
 .ul-footer {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  gap: 7rem;
 }
 
 .li-footer {
   display: flex;
   flex-direction: column;
+}
+
+.div-footer {
+  position: absolute;
+  left: 0;
 }
 
 .bottom-footer {
