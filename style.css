@@ -204,3 +204,5 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+
+/* add margin to the footer so that div isnt on the left side of screen on bigger sizes
