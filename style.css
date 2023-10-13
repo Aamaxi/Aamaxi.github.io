@@ -19,13 +19,14 @@ li {
   list-style: none;
 }
 
+
+
 .section-standard {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 85vh;
-  padding-left: 12vw;
-  padding-right: 12vw;
+  
 }
 
 .img-standard {
@@ -48,6 +49,14 @@ li {
 .h3-standard {
   margin: 1rem;
   font-size: 2.5em;
+}
+
+.h4-standard {
+  font-size: 1.3em;
+}
+
+.h6-standard {
+  font-size: 1.1em;
 }
 
 .p-standard {
@@ -84,6 +93,7 @@ li {
 
 .titleSection {
   background-color: #c0c0c0;
+  display: flex;
 }
 /* change sizing for better system maybe */
 
@@ -94,6 +104,10 @@ li {
 
 .button-titleSection {
   align-self: flex-start;
+}
+
+.div-titleSection {
+  width: 75%;
 }
 
 /* find out how to use flexbox better */
@@ -152,8 +166,8 @@ li {
 .contactSection {
   display: flex;
   background-color: darkgrey;
-  padding-left: calc(12vw + 2vw);
-  padding-right: calc(12vw + 2vw);
+  padding-left: calc(15vw + 3vw);
+  padding-right: calc(15vw + 3vw);
   gap: 1.5rem;
 }
 
@@ -175,29 +189,22 @@ li {
 footer {
   background-color: #616161;
   color: azure;
+  padding-right: 15vw;
+  padding-left: 15vw;
 }
 
 .top-footer {
   display: flex;
-  gap: 1em;
-  position: relative;
-  justify-content: center;
 }
 
 .ul-footer {
   display: flex;
-  justify-content: center;
-  gap: 7rem;
+  justify-content: space-between;
 }
 
 .li-footer {
   display: flex;
   flex-direction: column;
-}
-
-.div-footer {
-  position: absolute;
-  left: 0;
 }
 
 .bottom-footer {
