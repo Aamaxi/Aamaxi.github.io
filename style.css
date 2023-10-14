@@ -26,7 +26,6 @@ li {
   flex-direction: column;
   justify-content: center;
   min-height: 85vh;
-  
 }
 
 .img-standard {
@@ -93,7 +92,11 @@ li {
 
 .titleSection {
   background-color: #c0c0c0;
-  display: flex;
+}
+
+.div-titleSection {
+  width: 70rem;
+  align-self: center;
 }
 /* change sizing for better system maybe */
 
@@ -106,10 +109,6 @@ li {
   align-self: flex-start;
 }
 
-.div-titleSection {
-  width: 75%;
-}
-
 /* find out how to use flexbox better */
 
 .myWorkSection { 
@@ -117,13 +116,25 @@ li {
   align-items: center;
 }
 
+.div-myWorkSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75rem;
+}
+
 .h2-myWorkSection {
   text-align: center;
 }
 
 .button-myWorkSection {
-  width: 10em;
-  min-height: 7em;
+  width: 15em;
+  min-height: 10em;
+}
+
+.see_more-button-myWorkSection {
+  width: fit-content;
 }
 
 .brandSection {
@@ -180,6 +191,7 @@ li {
 
 .input-contactSection {
   padding: 5px;
+  resize: none;
 }
 
 .button-contactSection {
