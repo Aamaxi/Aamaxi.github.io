@@ -92,6 +92,7 @@ li {
 
 .titleSection {
   background-color: #c0c0c0;
+  flex-direction: row;
 }
 
 .div-titleSection {
@@ -114,6 +115,7 @@ li {
 .myWorkSection { 
   background-color: #744343;
   align-items: center;
+  flex-direction: row;
 }
 
 .div-myWorkSection {
@@ -139,6 +141,14 @@ li {
 
 .brandSection {
   background-color: aqua;
+  flex-direction: row;
+}
+
+.div-brandSection {
+  display: flex;
+  width: 75rem;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .h2-brandSection {
@@ -177,9 +187,14 @@ li {
 .contactSection {
   display: flex;
   background-color: darkgrey;
-  padding-left: calc(15vw + 3vw);
-  padding-right: calc(15vw + 3vw);
-  gap: 1.5rem;
+  flex-direction: row;
+  align-items: center;
+}
+
+.div-contactSection {
+  display: flex;
+  flex-direction: column;
+  width: 75rem;
 }
 
 .form-contactSection {
@@ -187,6 +202,7 @@ li {
   flex-direction: column;
   align-items: stretch;
   gap: 1.5rem;
+  
 }
 
 .input-contactSection {
@@ -201,12 +217,16 @@ li {
 footer {
   background-color: #616161;
   color: azure;
-  padding-right: 15vw;
-  padding-left: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.top-footer {
+.div-footer {
   display: flex;
+  flex-direction: column;
+  width: 75rem;
+
 }
 
 .ul-footer {
