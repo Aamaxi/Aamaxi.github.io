@@ -38,7 +38,7 @@ li {
 
 .h1-standard {
   margin: 1rem;
-  font-size: 3.5em;
+  font-size: 3.5rem;
 }
 
 .h2-standard {
@@ -47,27 +47,27 @@ li {
 
 .h3-standard {
   margin: 1rem;
-  font-size: 2.5em;
+  font-size: 2.5rem;
 }
 
 .h4-standard {
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
 
 .h6-standard {
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 .p-standard {
   margin: 1rem;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .ul_grid-standard {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 1rem;
 }
 
 .navbar {
