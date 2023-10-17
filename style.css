@@ -158,7 +158,14 @@ li {
 .commentSection {
   background-color: blanchedalmond;
   display: flex;
+  flex-direction: row;
+}
+
+.div-commentSection {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 75rem;
 }
 
 .person-commentSection {
@@ -175,7 +182,6 @@ li {
 
 .div1-commentSection {
   display: flex;
-  
 }
 
 .div2-commentSection {
