@@ -36,7 +36,6 @@ li {
 }
 
 .h1-standard {
-  
   font-size: 6em;
 }
 
@@ -64,7 +63,7 @@ li {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 1rem;
 }
 
 header {
@@ -181,7 +180,14 @@ nav {
 .commentSection {
   background-color: blanchedalmond;
   display: flex;
+  flex-direction: row;
+}
+
+.div-commentSection {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 75rem;
 }
 
 .person-commentSection {
@@ -198,7 +204,6 @@ nav {
 
 .div1-commentSection {
   display: flex;
-  
 }
 
 .div2-commentSection {
