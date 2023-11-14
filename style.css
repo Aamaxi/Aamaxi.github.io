@@ -57,6 +57,7 @@ li {
 
 .p-standard {
   font-size: 1.6em;
+  text-decoration: none;
 }
 
 .ul_grid-standard {
@@ -92,6 +93,18 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   
+}
+
+.a-navbar {
+  color: white;
+}
+
+.a-navbar-active {
+  color: darkblue;
+}
+
+.a-navbar:active {
+  color: darkblue;
 }
 
 .li-navbar {
