@@ -9,6 +9,7 @@
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 main {
@@ -18,8 +19,6 @@ main {
 li {
   list-style: none;
 }
-
-
 
 .section-standard {
   display: flex;
@@ -37,30 +36,27 @@ li {
 }
 
 .h1-standard {
-  margin: 1rem;
-  font-size: 3.5rem;
+  font-size: 6em;
 }
 
 .h2-standard {
-  font-size: 3em;
+  font-size: 4.5em;
 }
 
 .h3-standard {
-  margin: 1rem;
-  font-size: 2.5rem;
+  font-size: 2.5em;
 }
 
 .h4-standard {
-  font-size: 1.3rem;
+  font-size: 2em;
 }
 
 .h6-standard {
-  font-size: 1.1rem;
+  font-size: 1.8em;
 }
 
 .p-standard {
-  margin: 1rem;
-  font-size: 2rem;
+  font-size: 1.6em;
 }
 
 .ul_grid-standard {
@@ -70,22 +66,45 @@ li {
   gap: 1rem;
 }
 
-.navbar {
+header {
+  background-color: #47474710;
+}
+
+nav {
   display: flex;
   flex-direction: row;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 1rem;
+  justify-content: center;
+  width: 100vw;
+  background-color: #FFFFFF7F;
+  backdrop-filter: blur(10px);
+}
+
+.div-navbar {
+  position: fixed;
+}
+
+.ul-navbar {
+  display: flex;
+  flex-direction: row;
+  width: 70rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+.li-navbar {
+  padding: 0.5rem;
 }
 
 .aron_corestav-navbar {
-  width: 50vw; 
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 .buttons-navbar {
-  width: 50vw; 
+  width: 50rem;
   display: flex;
   justify-content: space-evenly;
 }
@@ -102,9 +121,12 @@ li {
 }
 /* change sizing for better system maybe */
 
+.h1-titlesection {
+  margin: 1rem;
+}
+
 .p-titlesection {
   margin: 1rem;
-  font-size: 1.5em;
 }
 
 .button-titleSection {
