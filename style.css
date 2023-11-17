@@ -12,6 +12,10 @@ body {
   font-size: 62.5%;
 }
 
+input, button, select, option, textarea {
+  font-size: 100%;
+}
+
 main {
 
 }
@@ -24,7 +28,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 85vh;
+  min-height: 50rem;
 }
 
 .img-standard {
@@ -32,7 +36,10 @@ li {
 }
 
 .button-standard {
-  margin: 1rem;
+  margin: 1em;
+  padding: 1em;
+  font-size: 1.6em;
+  border-radius: 25rem;
 }
 
 .h1-standard {
@@ -229,6 +236,10 @@ nav {
   background-color: darkgrey;
   flex-direction: row;
   align-items: center;
+}
+
+#id-contactSection {
+  
 }
 
 .div-contactSection {
