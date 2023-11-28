@@ -5,10 +5,13 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*makes it so the body goes down to the bottom of page instead of cutting of at the last element that is nearest the bottom. */
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
   font-size: 62.5%;
   font-family: Helvetica, sans-serif
 }
@@ -37,7 +40,7 @@ li {
 }
 
 .button-standard {
-  margin: 0.9em;
+  margin: 1em;
   padding-top: 0.9em;
   padding-bottom: 1em;
   padding-left: 1.5em;
@@ -58,7 +61,7 @@ li {
 }
 
 .h1-standard {
-  font-size: 6em;
+  font-size: 8em;
   text-decoration: none; 
 }
 
@@ -116,7 +119,7 @@ nav {
 .ul-navbar {
   display: flex;
   flex-direction: row;
-  width: 70rem;
+  width: 60rem;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
   justify-content: space-evenly;
@@ -148,7 +151,7 @@ nav {
   margin-left: auto;
 }
 .buttons-navbar {
-  width: 45rem;
+  width: 40rem;
   display: flex;
   justify-content: space-evenly;
 }
@@ -161,20 +164,25 @@ nav {
 
 .div-titleSection {
   width: 70rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
   align-self: center;
 }
 /* change sizing for better system maybe */
 
 .h1-titlesection {
-  margin: 1rem;
+  text-align: center;
 }
 
 .p-titlesection {
-  margin: 1rem;
+  text-align: center;
+  font-size: 2em;
 }
 
 .button-titleSection {
-  align-self: flex-start;
+  
 }
 
 .myWorkSection { 
@@ -193,6 +201,7 @@ nav {
 
 .h2-myWorkSection {
   text-align: center;
+  margin: 1rem;
 }
 
 .button-myWorkSection {
@@ -291,7 +300,7 @@ nav {
 
 footer {
   background-color: #616161;
-  color: azure;
+  color: #e0e0e0
   display: flex;
   flex-direction: row;
   justify-content: center;
