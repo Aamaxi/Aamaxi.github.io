@@ -119,12 +119,14 @@ nav {
 }
 
 .aron_corestav-navbar {
-  display: flex;
-  justify-content: left;
+  margin-right: auto;
 }
 
+.social_media-navbar {
+  margin-left: auto;
+}
 .buttons-navbar {
-  width: 50rem;
+  width: 45rem;
   display: flex;
   justify-content: space-evenly;
 }
