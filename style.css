@@ -94,7 +94,6 @@ li {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
 }
 
 header {
@@ -191,6 +190,7 @@ nav {
   background-color: #744343;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .div-myWorkSection {
@@ -198,26 +198,31 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 75rem;
 }
 
 .project-div-myWorkSection {
   background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
+  margin: 1rem;
+  max-width: 30rem;
 }
+
 
 .project-div-img-myWorkSection {
-
+  
 }
+
 
 .project-img-myWorkSection {
   padding: 0.7rem;
-  max-width: 50%;
+  /*max-width: 30rem;*/
+  width: 100%;
 }
 
 .project-text-div-myWorkSection {
-  
+  display: flex;
+  flex-direction: column;
 }
 
 .project-text-div-myWorkSection {
@@ -228,7 +233,6 @@ nav {
   padding-left: 0.7rem;
   padding-right: 0.7rem;
   padding-bottom: 0.7rem;
-  max-width: 25rem;
 }
 
 .project-text-div-p-myWorkSection {
@@ -236,7 +240,6 @@ nav {
   padding-right: 0.7rem;
   padding-bottom: 0.7rem;
   font-size: 1.2rem;
-  max-width: 25rem;
 }
 
 .project-button-myWorkSection {
@@ -250,9 +253,14 @@ nav {
   font-size: 1.6em;
 }
 
+.project-button-myWorkSection:hover {
+  background-color: #bdbdbd;
+}
+
 .h2-myWorkSection {
   text-align: center;
   margin: 1rem;
+  margin-bottom: 0;
 }
 
 .button-myWorkSection {
@@ -261,7 +269,7 @@ nav {
 }
 
 .see_more-button-myWorkSection {
-  width: fit-content;
+  margin-top: 0;
 }
 
 .brandSection {
@@ -283,7 +291,6 @@ nav {
 .commentSection {
   background-color: blanchedalmond;
   display: flex;
-  flex-direction: row;
 }
 
 .div-commentSection {
@@ -307,6 +314,7 @@ nav {
 
 .div1-commentSection {
   display: flex;
+
 }
 
 .div2-commentSection {
