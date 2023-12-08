@@ -47,7 +47,7 @@ li {
   padding-right: 1.5em;
   font-size: 1.6em;
   border-radius: 25rem;
-  background-color: #ffffff;
+  background-color: #e6e3e3;
   text-decoration: None;
   border: 2px solid;
   border-color: #000000;
@@ -105,6 +105,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   width: 100vw;
+  z-index: 2;
 }
 
 #navbar-js {
@@ -113,6 +114,7 @@ nav {
 
 .div-navbar {
   position: fixed;
+  z-index: 2;
 }
 
 .ul-navbar {
@@ -123,15 +125,14 @@ nav {
   padding-bottom: 0.8rem;
   justify-content: space-evenly;
   align-items: center;
-  
 }
 
 .a-navbar {
-  color: white;
+  color: #e6e3e3;
 }
 
 .a-navbar-active {
-  color: darkblue;
+  color: #00008b;
 }
 
 .a-navbar:hover {
@@ -159,10 +160,29 @@ nav {
 .titleSection {
   background-color: #837dcc;
   flex-direction: row;
-  
+  background-image: url(images/background_image.png);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  position: relative;
+  overflow: hidden;
+}
+
+/* learn how this works */
+.titleSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(20px);
+  z-index: -1;
 }
 
 .div-titleSection {
+  z-index: 5;
+  position: relative;
   width: 70rem;
   display: flex;
   gap: 1rem;
@@ -175,11 +195,13 @@ nav {
 
 .h1-titlesection {
   text-align: center;
+  color: #e6e3e3;
 }
 
 .p-titlesection {
   text-align: center;
   font-size: 2em;
+  color: #e6e3e3;
 }
 
 .button-titleSection {
