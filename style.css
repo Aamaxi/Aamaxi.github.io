@@ -32,7 +32,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 50rem;
+  /*min-height: 50rem;*/
 }
 
 .img-standard {
@@ -88,12 +88,6 @@ li {
 .p-standard {
   font-size: 1.6em;
   text-decoration: none;
-}
-
-.ul_grid-standard {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 header {
@@ -158,6 +152,7 @@ nav {
 
 /* Home: */
 .titleSection {
+  min-height: 50rem;
   background-color: #837dcc;
   flex-direction: row;
   background-image: url(images/background_image.png);
@@ -209,10 +204,14 @@ nav {
 }
 
 .myWorkSection { 
-  background-color: #744343;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  min-height: 50rem;
+}
+
+.gradient_background-myWorkSection_brandSection {
+  background-image: linear-gradient(#aed8e9 0%,  #2837C6 100%); 
 }
 
 .div-myWorkSection {
@@ -222,24 +221,35 @@ nav {
   align-items: center;
 }
 
+.ul-myWorkSection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .project-div-myWorkSection {
   background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
   margin: 1rem;
   max-width: 30rem;
+  border: 2px solid black;
+  border-radius: 2rem;
 }
 
 
 .project-div-img-myWorkSection {
-  
+
 }
 
 
 .project-img-myWorkSection {
   padding: 0.7rem;
-  /*max-width: 30rem;*/
+  height: auto;
+  background-size: cover;
+  background-position: center;
   width: 100%;
+  border-radius: 2rem;
 }
 
 .project-text-div-myWorkSection {
@@ -273,6 +283,8 @@ nav {
   border-bottom: none;
   border-color: #000000;
   font-size: 1.6em;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 
 .project-button-myWorkSection:hover {
@@ -295,8 +307,19 @@ nav {
 }
 
 .brandSection {
-  background-color: aqua;
   flex-direction: row;
+  min-height: 40rem;
+}
+
+.ul-brandSection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logo-brandSection {
+  width: 20rem;
 }
 
 .div-brandSection {
@@ -308,11 +331,13 @@ nav {
 
 .h2-brandSection {
   text-align: center;
+  margin: 1rem;
 }
 
 .commentSection {
-  background-color: blanchedalmond;
+  background-color: rgb(177, 177, 177);
   display: flex;
+  height: 50rem;
 }
 
 .div-commentSection {
@@ -350,6 +375,7 @@ nav {
   background-color: darkgrey;
   flex-direction: row;
   align-items: center;
+  min-height: 50rem;
 }
 
 #id-contactSection {
