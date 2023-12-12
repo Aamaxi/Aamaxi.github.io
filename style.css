@@ -52,7 +52,6 @@ li {
   border: 2px solid;
   border-color: #000000;
   color: #000000;
-  
 }
 
 .button-standard:hover {
@@ -172,7 +171,6 @@ nav {
   width: 100%;
   height: 100%;
   backdrop-filter: blur(50px);
-  z-index: -1;
 }
 
 .div-titleSection {
@@ -184,7 +182,7 @@ nav {
   flex-direction: column;
   align-items: center;
   align-self: center;
-  margin: 5em;
+  margin: 5rem;
 }
 /* change sizing for better system maybe */
 
@@ -205,7 +203,7 @@ nav {
 
 .myWorkSection { 
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   min-height: 50rem;
 }
@@ -339,6 +337,8 @@ nav {
   background-color: rgb(177, 177, 177);
   display: flex;
   height: 50rem;
+  flex-direction: row;
+  align-items: center;
 }
 
 .div-commentSection {
@@ -362,6 +362,7 @@ nav {
 
 .div1-commentSection {
   display: flex;
+  flex-direction: row;
 
 }
 
@@ -377,6 +378,7 @@ nav {
   flex-direction: row;
   align-items: center;
   min-height: 50rem;
+  bordf
 }
 
 #id-contactSection {
@@ -387,6 +389,7 @@ nav {
   display: flex;
   flex-direction: column;
   width: 75rem;
+  margin: 3rem;
 }
 
 .form-contactSection {
@@ -400,6 +403,7 @@ nav {
 .input-contactSection {
   padding: 5px;
   resize: none;
+  border-radius: 1rem;
 }
 
 .button-contactSection {
@@ -418,12 +422,15 @@ footer {
   display: flex;
   flex-direction: column;
   width: 75rem;
-
+  margin: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .ul-footer {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 0.5rem;
 }
 
 .li-footer {
@@ -434,6 +441,8 @@ footer {
 .bottom-footer {
   display: flex;
   justify-content: space-between;
+  border-top: 2px solid #e0e0e0;
+  padding-top: 0.5rem;
 }
 
 /* The Future: */
