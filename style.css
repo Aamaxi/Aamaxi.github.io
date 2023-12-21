@@ -59,6 +59,17 @@ li {
   cursor: pointer;
 }
 
+.tag-standard {
+  font-size: 1.6em;
+  background-color: rgb(189, 189, 189);
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border-left: #0303d4 solid 0.5rem;
+  color: #0303d4;
+  font-weight: bold;
+  width: fit-content;
+}
+
 .h1-standard {
   font-size: 8em;
   text-decoration: none; 
@@ -222,9 +233,41 @@ nav {
 .ul-myWorkSection {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
+.li-myWorkSection {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 4%;
+  max-width: 75rem;
+  justify-content: space-between;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.project-div-img-myWorkSection {
+  min-width: 48%;
+  max-height: 50rem;
+  background-color: #ec7979;
+}
+
+.project-div-text-myWorkSection {
+  max-width: 48%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-div-tag-myWorkSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+
+/*
 .project-div-myWorkSection {
   background-color: #f5f5f5;
   display: flex;
@@ -307,6 +350,8 @@ nav {
 .see_more-button-myWorkSection {
   margin-top: 0;
 }
+*/
+
 
 .brandSection {
   flex-direction: row;
