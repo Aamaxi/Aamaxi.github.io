@@ -1,3 +1,3 @@
-My bad and horrible portfolio website 
+My horrible portfolio website 
 
 ε=ε=ε=(~￣▽￣)~
