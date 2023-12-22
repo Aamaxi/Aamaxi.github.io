@@ -61,11 +61,11 @@ li {
 
 .tag-standard {
   font-size: 1.6em;
-  background-color: rgb(189, 189, 189);
+  background-color: #e4e4e4;
   padding: 0.7rem;
   border-radius: 0.5rem;
-  border-left: #0303d4 solid 0.5rem;
-  color: #0303d4;
+  border-left: #000000 solid 0.5rem;
+  color: #000000;
   font-weight: bold;
   width: fit-content;
 }
@@ -97,6 +97,7 @@ li {
 
 .p-standard {
   font-size: 1.6em;
+  line-height: 1.7;
   text-decoration: none;
 }
 
@@ -234,6 +235,8 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 7rem;
 }
 
 .li-myWorkSection {
@@ -242,15 +245,60 @@ nav {
   flex-direction: row;
   gap: 4%;
   max-width: 75rem;
-  justify-content: space-between;
+  justify-content: end;
   margin-right: 1rem;
   margin-left: 1rem;
 }
 
 .project-div-img-myWorkSection {
-  min-width: 48%;
-  max-height: 50rem;
-  background-color: #ec7979;
+  flex-grow: 1;
+}
+
+.project-img-myWorkSection {
+  max-width: 100%;
+  height: 35rem;
+  box-shadow: 0px 0px 22px 0px #0000007a;;
+}
+
+.casio-myWorkSection {
+  background: url("images/casio_website.png");
+  background-size: cover;
+  background-position: top;
+  transition: ease-in-out 7s;
+}
+
+.apple-myWorkSection {
+  background: url("images/apple_website.png");
+  background-size: cover;
+  background-position: top;
+  transition: ease-in-out 7s;
+}
+
+.stripe-myWorkSection {
+  background: url("images/stripe_website.png");
+  background-size: cover;
+  background-position: top;
+  transition: ease-in-out 7s;
+}
+
+@media screen and (max-width: 50rem) {
+  .li-myWorkSection {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  body .project-div-text-myWorkSection {
+    align-self: center;
+    max-width: 100%;
+  }
+
+  .project-div-img-myWorkSection {
+    order: -1;
+  }
+}
+
+.project-img-myWorkSection:hover {
+  background-position: bottom;
 }
 
 .project-div-text-myWorkSection {
@@ -266,92 +314,40 @@ nav {
   gap: 1rem;
 }
 
-
-/*
-.project-div-myWorkSection {
-  background-color: #f5f5f5;
+.project-div-button-myWorkSection {
   display: flex;
-  flex-direction: column;
-  margin: 1rem;
-  max-width: 30rem;
-  border-radius: 1rem;
-  max-height: 50rem;
-}
-
-.project-div-img-myWorkSection {
-  display: flex;
-  justify-content: bottom;
-}
-
-.project-img-myWorkSection {
-  background-color: #00008b;
-  margin: 1em;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: scale-down;
-  object-position: bottom;
-  overflow: hidden;
-  height: auto;
-  width: auto;
-  padding: 0.7rem;
-  padding-bottom: 0;
-  border-radius: 1rem;
-}
-
-.project-div-text-myWorkSection {
-  
-}
-
-.project-text-div-myWorkSection {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.project-text-div-h3-myWorkSection {
-  padding-left: 0.7rem;
-  padding-right: 0.7rem;
-  padding-bottom: 0.7rem;
-}
-
-.project-text-div-p-myWorkSection {
-  padding-left: 0.7rem;
-  padding-right: 0.7rem;
-  padding-bottom: 0.7rem;
-  font-size: 1.2rem;
+  gap: 1rem;
 }
 
 .project-button-myWorkSection {
-  min-width: 100%;
-  height: 5em;
-  background-color: #dadada;
-  border: none;
+  padding-top: 0.9em;
+  padding-bottom: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
   font-size: 1.6em;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  border-radius: 0.5rem;
+  background-color: #e6e3e3;
+  text-decoration: None;
+  border: 3px solid;
+  border-color: #000000;
+  color: #000000;
 }
 
 .project-button-myWorkSection:hover {
-  background-color: #bdbdbd;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.line-myWorkSection {
+  width: 100%;
+  height: 1.5px;
+  background-color: #46464663;
 }
 
 .h2-myWorkSection {
   text-align: center;
-  margin: 1rem;
-  margin-bottom: 0;
+  margin: 1.5rem;
 }
-
-.button-myWorkSection {
-  width: 15em;
-  min-height: 10em;
-}
-
-.see_more-button-myWorkSection {
-  margin-top: 0;
-}
-*/
-
 
 .brandSection {
   flex-direction: row;
@@ -362,7 +358,8 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 3rem;
+  margin: 1rem;
 }
 
 .li-brandSection {
@@ -371,7 +368,7 @@ nav {
 }
 
 .logo-brandSection {
-  width: 20rem;
+  height: 4.9rem;
 }
 
 .div-brandSection {
@@ -386,6 +383,7 @@ nav {
   margin: 1rem;
 }
 
+
 .commentSection {
   background-color: rgb(177, 177, 177);
   display: flex;
@@ -394,6 +392,7 @@ nav {
   align-items: center;
 }
 
+
 .div-commentSection {
   display: flex;
   flex-direction: column;
@@ -401,6 +400,7 @@ nav {
   width: 75rem;
 }
 
+/*
 .person-commentSection {
 
 }
@@ -424,6 +424,7 @@ nav {
   flex-direction: row;
   justify-content: center;
 }
+*/
 
 .contactSection {
   display: flex;

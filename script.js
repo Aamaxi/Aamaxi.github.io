@@ -1,5 +1,5 @@
 const navbar = document.getElementById('navbar-js');
-console.log(navbar); // This should work without waiting for DOMContentLoaded
+console.log(navbar);
 
 
 window.addEventListener("scroll", function() {
@@ -14,24 +14,3 @@ window.addEventListener("scroll", function() {
     navbar.style.backdropFilter = null
   }
 });
-
-
-
-
-/*
-const fadeElement = document.querySelector("nav");
-
-
-
-
-
-function scrollOpacity () {
-  let scrollPosition = document.scrollY;
-  let maxScroll = 10;
-  if (maxScroll > scrollPosition) {
-    navbar.style
-  }
-}
-
-document.addEventListener("scroll", "scrollOpacity");
-*/
