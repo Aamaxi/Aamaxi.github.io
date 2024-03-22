@@ -155,7 +155,7 @@ nav {
   transition: background-color 0.5s, backdrop-filter 0.3s;
 }
 
-.div-navbar {
+header > div {
   position: fixed;
   z-index: 2;
 }
@@ -189,9 +189,6 @@ nav {
 
 .a-navbar:hover {
   color: #303030;
-}
-
-.li-navbar {
 }
 
 .aron_corestav-navbar {
@@ -283,15 +280,15 @@ nav {
 }
 
 @media screen and (max-width: 50rem) {
-  .h1-titlesection {
+  .titleSection h1 {
     font-size: 8em;
   }
 
-  body .p-titlesection {
+  body .titleSection p {
     font-size: 1.6em;
   }
 
-  body .div-titleSection {
+  body .titleSection > div {
     gap: 1rem;
   }
 }
@@ -302,7 +299,7 @@ nav {
   }
 }
 
-.div-titleSection {
+.titleSection > div {
   position: relative;
   width: 70rem;
   display: flex;
@@ -321,17 +318,17 @@ nav {
 }
 
 
-.h1-titlesection {
+.titleSection h1 {
   text-align: center;
   color: #000000;
 }
 
-.aron-h1-span-titlesection {
+.titleSection span {
   text-align: center;
   color: #000f99;
 }
 
-.p-titlesection {
+.titleSection p {
   text-align: center;
   font-size: 2em;
   color: #000000;
@@ -339,7 +336,7 @@ nav {
   line-height: 32px;
 }
 
-.button-titleSection {
+.button-div-titleSection button {
   margin: 1em;
 }
 
