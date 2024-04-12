@@ -1,3 +1,3 @@
-My horrible portfolio website 
+My amazin portfolio website 
 
 ㄟ( ▔, ▔ )ㄏ
