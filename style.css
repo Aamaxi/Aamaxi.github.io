@@ -18,10 +18,6 @@ input, button, select, option, textarea {
   font-size: 100%;
 }
 
-main {
-
-}
-
 li {
   list-style: none;
 }
@@ -414,8 +410,6 @@ header > div {
   }
 }
 
-
-
 .project-img-myWorkSection:hover {
   background-position: bottom;
 }
@@ -502,7 +496,6 @@ header > div {
   margin: 1rem;
 }
 
-
 .commentSection {
   background: rgb(229, 231, 255);
   background: linear-f(210deg, rgba(229, 231, 255, 1) 0%, rgba(185, 217, 255, 1) 100%);
@@ -511,7 +504,6 @@ header > div {
   flex-direction: row;
   align-items: center;
 }
-
 
 .div-commentSection {
   display: flex;
